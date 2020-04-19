@@ -17,13 +17,14 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBgtCC4MIOdS-SHvYgYm6ujg44W1VXT9ds"/>
 
-        <activity android:name="com.luisg.conf.view.ui.activities.SplashscreenActivity"></activity>
-        <activity android:name=".view.ui.activities.MainActivity">
+        <activity android:name="com.luisg.conf.view.ui.activities.SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".view.ui.activities.MainActivity">
         </activity>
     </application>
 
