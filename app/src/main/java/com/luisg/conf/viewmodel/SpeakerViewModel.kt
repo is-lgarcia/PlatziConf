@@ -1,14 +1,15 @@
 package com.luisg.conf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.luisg.conf.model.Speaker
 import com.luisg.conf.network.Callback
 import com.luisg.conf.network.FirestoreService
 import java.lang.Exception
 
-class SpeakerViewModel {
+class SpeakerViewModel : ViewModel(){
     val firestoreService = FirestoreService()
-    var listSchedule: MutableLiveData<List<Speaker>> = MutableLiveData()
+    var listSpeaker: MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
 
     fun refresh() {
@@ -18,7 +19,7 @@ class SpeakerViewModel {
     fun getSpeakerFromFirebase(){
         firestoreService.getSpeaker(object: Callback<List<Speaker>> {
             override fun onSuccess(result: List<Speaker>?) {
-                listSchedule.postValue(result)
+                listSpeaker.postValue(result)
                 processFinished()
             }
 
