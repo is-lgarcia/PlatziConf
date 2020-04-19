@@ -1,23 +1,23 @@
 package com.luisg.conf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import com.luisg.conf.model.Conference
+import com.luisg.conf.model.Speaker
 import com.luisg.conf.network.Callback
 import com.luisg.conf.network.FirestoreService
 import java.lang.Exception
 
-class ScheduleViewModel {
+class SpeakerViewModel {
     val firestoreService = FirestoreService()
-    var listSchedule: MutableLiveData<List<Conference>> = MutableLiveData()
+    var listSchedule: MutableLiveData<List<Speaker>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
 
     fun refresh() {
-        getScheduleFromFirebase()
+        getSpeakerFromFirebase()
     }
 
-    fun getScheduleFromFirebase(){
-        firestoreService.getSchudule(object: Callback<List<Conference>>{
-            override fun onSuccess(result: List<Conference>?) {
+    fun getSpeakerFromFirebase(){
+        firestoreService.getSpeaker(object: Callback<List<Speaker>> {
+            override fun onSuccess(result: List<Speaker>?) {
                 listSchedule.postValue(result)
                 processFinished()
             }
