@@ -17,6 +17,8 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        android:background="#fff"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -50,7 +52,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/txtDetailConferenceHour"
+                            android:id="@+id/txtDetailUbicationPlace"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Lugar Platzi Conf"
@@ -62,6 +64,7 @@
                             android:layout_margin="5dp"/>
 
                         <EditText
+                            android:id="@+id/txtDetailUbicationDirection"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Dirección"
@@ -70,6 +73,7 @@
                             android:layout_marginBottom="10dp"/>
 
                         <EditText
+                            android:id="@+id/txtDetailUbicationPhone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="teléfono"
@@ -78,6 +82,7 @@
                             android:layout_marginBottom="10dp"/>
 
                         <EditText
+                            android:id="@+id/txtDetailUbicationWebSite"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="www.asajhad.com"
