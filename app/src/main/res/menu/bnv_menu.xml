@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="@string/bnv_inicio"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/navScheduleFragment"
+        android:title="@string/bnv_chedule"
+        android:icon="@drawable/ic_schedule"/>
+
+    <item
+        android:id="@+id/navSpeakerFragment"
+        android:title="@string/bnv_speaker"
+        android:icon="@drawable/ic_speaker"/>
+
+    <item
+        android:id="@+id/navUbicationFragment"
+        android:title="@string/bnv_ubication"
+        android:icon="@drawable/ic_ubication"/>
+</menu>

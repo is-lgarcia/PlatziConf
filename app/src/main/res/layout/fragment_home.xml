@@ -24,7 +24,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
                     
                     <ImageView
                         android:layout_width="match_parent"
@@ -62,12 +63,6 @@
                         android:layout_marginLeft="@dimen/marginHomeSubtitle"
                         android:layout_marginTop="@dimen/marginHomeSubtitle"/>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="@dimen/marginHomeSubtitle"/>
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -81,11 +76,13 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/platzi_conf_2"/>
                     <View
                         android:layout_width="match_parent"
@@ -138,11 +135,13 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/platzi_conf_3"/>
                     <View
                         android:layout_width="match_parent"

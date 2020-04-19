@@ -20,4 +20,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bnv_inicio">Inicio</string>
+    <string name="bnv_chedule">Agenda</string>
+    <string name="bnv_speaker">Expositores</string>
+    <string name="bnv_ubication">Ubicación</string>
 </resources>
