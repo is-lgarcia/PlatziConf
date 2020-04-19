@@ -17,6 +17,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
+        android:background="#FFF"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,14 +32,15 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp">
+                    android:layout_height="200dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageSpeaker"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
                         android:scaleType="centerCrop"
                         android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
                         android:src="@drawable/fotoperfil"
                         app:civ_border_width="2dp"
                         app:civ_border_color="#FF000000"/>

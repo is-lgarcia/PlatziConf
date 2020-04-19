@@ -44,7 +44,7 @@ class SpeakersFragment : Fragment(), SpeakerListener {
         speakerAdapter = SpeakerAdapter(this)
 
         rvSpeaker.apply {
-            layoutManager = LinearLayoutManager(view.context,LinearLayoutManager.VERTICAL,false)
+            layoutManager = GridLayoutManager(context,2)
             adapter = speakerAdapter
         }
 
@@ -54,7 +54,8 @@ class SpeakersFragment : Fragment(), SpeakerListener {
 
     fun observerViewModel(){
         viewModel.listSpeaker.observe(viewLifecycleOwner, Observer <List<Speaker>>{ speaker ->
-            speakerAdapter.updateData(speaker)
+            speaker.let {
+                speakerAdapter.updateData(speaker) }
         })
 
         viewModel.isLoading.observe(viewLifecycleOwner,Observer<Boolean>{
