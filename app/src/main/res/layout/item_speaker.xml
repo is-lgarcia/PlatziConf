@@ -13,11 +13,13 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/ivItemSpeakerImage"
             android:layout_width="match_parent"
             android:layout_height="@dimen/altoImageViewHome"
             android:src="@drawable/banner_platzi_conf" />
 
         <TextView
+            android:id="@+id/txtItemSpeakerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre Expositor"
@@ -27,6 +29,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/txtItemSpeakerWorplace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo"
